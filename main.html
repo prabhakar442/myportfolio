@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: rgb(34, 34, 34);
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            background-color: rgb(100, 100, 100);
+        }
+
+        header nav ul li a:active {
+            background-color: rgb(150, 150, 150);
+        }
+
+        .section {
+            padding: 2rem 0;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: rgb(45, 45, 48);
+            color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .about-text {
+            flex: 1;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            /* Change the font family */
+            font-size: 1.1rem;
+            /* Adjust the font size */
+            line-height: 1.8;
+            /* Adjust the line height */
+        }
+
+
+        .about-image {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .about-image img {
+            width: 500px;
+            height: 550px;
+            border-radius: 10px;
+        }
+
+        .project {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background-color: rgb(255, 250, 240);
+            border-radius: 10px;
+        }
+
+        .project h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            background: #f4f4f4;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: rgb(34, 34, 34);
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        #about {
+
+            background-image: url('e:\C Drive\Downloads\Pattern-cover_1100x500-1024x465.png');
+            /* Add the path to your image */
+            background-color: rgb(64, 64, 64);
+            /* Fallback background color */
+            color: #fff;
+            padding: 1rem 0;
+
+
+
+        }
+
+        #projects {
+            background: rgb(40, 47, 52);
+            color: #000000;
+        }
+
+
+
+        #skills {
+            background: rgb(129, 121, 121);
+            color: #030303;
+        }
+
+        #contact {
+            background: rgb(0, 0, 0);
+            color: #fff;
+
+            /* Add this CSS code for transition effect */
+            header nav ul li a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 1rem;
+                padding: 5px 10px;
+                border-radius: 5px;
+                transition: background-color 0.3s, color 0.3s;
+                /* Added transition property */
+            }
+
+            header nav ul li a:hover {
+                background-color: rgb(100, 100, 100);
+            }
+
+            header nav ul li a:active {
+                background-color: rgb(150, 150, 150);
+            }
+
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            /* Add transition for smooth effect */
+        }
+
+        .about-image img:hover {
+            transform: scale(1.1);
+            /* Apply scale transformation on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Prabhakar</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>Hello! I'm Prabhakar, a passionate web developer with a deep love for coding and creating
+                        innovative web solutions. With a keen eye for design and a commitment to functionality, I strive
+                        to build websites that not only look great but also provide an excellent user experience.</p>
+                    <p>From a young age, I've been fascinated by technology and the endless possibilities it offers.
+                        This curiosity led me to explore the world of web development, where I discovered my true
+                        calling. Whether it's designing a sleek user interface or developing a robust backend, I enjoy
+                        every step of the process.</p>
+                    <p>In addition to web development, I enjoy learning new programming languages and frameworks, always
+                        staying up-to-date with the latest industry trends. I believe in continuous learning and
+                        constantly challenging myself to grow as a developer.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source
+                        projects, or sharing my knowledge with the developer community. I am always excited to
+                        collaborate on interesting projects and bring ideas to life through code.</p>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="e:\C Drive\Documents\WhatsApp Image 2024-05-18 at 13.36.56_39176dba.jpg" alt="My Picture">
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project One</h3>
+                <p>Build a fully functional e-commerce website with product listings, a shopping cart, checkout process,
+                    and payment integration.</p>
+            </div>
+            <div class="project">
+                <h3>Project Two</h3>
+                <p>Develop a task management app where users can create, edit, delete, and organize tasks. Include
+                    features like deadlines, priority settings, and categorization..</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>c </li>
+                <li>Python</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: prabhakarjd2@gmail.com</p>
+            <p>mayankjangid4442@gmail.com</p>
+            <p>LinkedIn: <a
+                    href="https://www.linkedin.com/in/prabhakar-23505a285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank">linkedin.com/in/prabhakar</a></p>
+            <!-- Add more contact information as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Prabhakar. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
